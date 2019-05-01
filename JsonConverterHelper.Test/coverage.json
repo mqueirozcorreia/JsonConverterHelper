@@ -1,0 +1,234 @@
+{
+  "JsonConverterHelper.dll": {
+    "/home/mateus/Documents/Projects/JsonConverterHelper/JsonConverterHelper/JsonReaderExtension.cs": {
+      "JsonConverterHelper.JsonReaderExtension": {
+        "Newtonsoft.Json.Linq.JObject JsonConverterHelper.JsonReaderExtension::LoadPropertyAsJObject(Newtonsoft.Json.JsonReader)": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 1,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 28,
+              "EndOffset": 5,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/home/mateus/Documents/Projects/JsonConverterHelper/JsonConverterHelper/KeysAsListJsonConverter.cs": {
+      "JsonConverterHelper.KeysAsListJsonConverter`2": {
+        "System.Object JsonConverterHelper.KeysAsListJsonConverter`2::ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 7,
+            "29": 2,
+            "30": 2,
+            "32": 2,
+            "33": 2,
+            "34": 1,
+            "36": 1,
+            "37": 1
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 28,
+              "Offset": 86,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 28,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 18,
+              "EndOffset": 104,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void JsonConverterHelper.KeysAsListJsonConverter`2::LoadItem(K,Newtonsoft.Json.JsonSerializer,Newtonsoft.Json.Linq.JToken,T)": {
+          "Lines": {
+            "43": 2,
+            "44": 2,
+            "45": 2,
+            "46": 2,
+            "47": 2
+          },
+          "Branches": []
+        },
+        "System.Void JsonConverterHelper.KeysAsListJsonConverter`2::ReadItem(Newtonsoft.Json.Linq.JToken,T)": {
+          "Lines": {
+            "50": 2,
+            "51": 2
+          },
+          "Branches": []
+        },
+        "System.Void JsonConverterHelper.KeysAsListJsonConverter`2::WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)": {
+          "Lines": {
+            "54": 1,
+            "55": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 7,
+            "61": 2,
+            "62": 2,
+            "63": 2,
+            "64": 2,
+            "65": 2,
+            "66": 2,
+            "67": 1,
+            "68": 1,
+            "69": 1
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 24,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 60,
+              "Offset": 146,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 60,
+              "Offset": 146,
+              "EndOffset": 148,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 57,
+              "Offset": 24,
+              "EndOffset": 173,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean JsonConverterHelper.KeysAsListJsonConverter`2::get_CanWrite()": {
+          "Lines": {
+            "73": 3
+          },
+          "Branches": []
+        },
+        "System.Boolean JsonConverterHelper.KeysAsListJsonConverter`2::CanConvert(System.Type)": {
+          "Lines": {
+            "77": 0,
+            "78": 0,
+            "79": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "JsonConverterHelper.Test.dll": {
+    "/home/mateus/.nuget/packages/microsoft.net.test.sdk/16.0.1/build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/mateus/Documents/Projects/JsonConverterHelper/JsonConverterHelper.Test/KeysAsListJsonConverterTest.cs": {
+      "JsonConverterHelper.Test.KeysAsListJsonConverterTest": {
+        "System.Void JsonConverterHelper.Test.KeysAsListJsonConverterTest::Test_Deserialize()": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": []
+        },
+        "System.Void JsonConverterHelper.Test.KeysAsListJsonConverterTest::Test_Serialize()": {
+          "Lines": {
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "47": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "JsonConverterHelper.Test.KeysAsListJsonConverterTest/ClassWithId": {
+        "System.Int32 JsonConverterHelper.Test.KeysAsListJsonConverterTest/ClassWithId::get_Id()": {
+          "Lines": {
+            "13": 10
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
