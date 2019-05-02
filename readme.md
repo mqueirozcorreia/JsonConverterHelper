@@ -22,6 +22,6 @@ var json = @"{ ""1"" : { ""id"": 1 },
 var result = JsonConvert.DeserializeObject<KeysAsList>(json);
 
 Console.WriteLine(result.Count);
-Console.WriteLine(result[0].Id);
-Console.WriteLine(result[1].Id);
+Console.WriteLine(result[0].Id); //returns 1
+Console.WriteLine(result[1].Id); //returns 2
 ~~~~

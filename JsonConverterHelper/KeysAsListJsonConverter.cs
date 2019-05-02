@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -59,8 +60,22 @@ namespace JsonConverterHelper
                 writer.WriteStartObject();
                 foreach (var item in list)
                 {
-                    var id = item.GetType().GetProperty("Id").GetValue(item);
-                    writer.WritePropertyName(Convert.ToString(id));
+                    var property = item.GetType()
+                        .GetProperty("Id", 
+                        BindingFlags.IgnoreCase | 
+                        BindingFlags.DeclaredOnly | 
+                        BindingFlags.Public | 
+                        BindingFlags.Instance);
+
+                    if (property != null)
+                    {
+                        var id = property.GetValue(item);
+                        writer.WritePropertyName(Convert.ToString(id));
+                    }
+                    else
+                    {
+                        writer.WritePropertyName("IdNotFound");
+                    }
                     JToken t = JToken.FromObject(item);
                     t.WriteTo(writer);
                 }

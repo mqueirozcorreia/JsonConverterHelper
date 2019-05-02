@@ -48,5 +48,33 @@ namespace JsonConverterHelper.Test
 
             Assert.Equal(@"{""1"":{""Id"":1},""2"":{""Id"":2}}", result);
         }
+
+        public class ClassWithoutId
+        {
+            public int OtherId { get; set; }
+        }
+
+        [JsonConverter(typeof(KeysAsListJsonConverter<ClassWithoutId, ClassWithoutIdList>))]
+        public class ClassWithoutIdList : List<ClassWithoutId>
+        {
+        }
+
+        [Fact]
+        public void Test_SerializeWithoutId()
+        {
+            var list = new ClassWithoutIdList
+            {
+                new ClassWithoutId {
+                    OtherId = 1,
+                },
+                new ClassWithoutId {
+                    OtherId = 2,
+                }
+            };
+
+            var result = JsonConvert.SerializeObject(list);
+
+            Assert.Equal(@"{""IdNotFound"":{""OtherId"":1},""IdNotFound"":{""OtherId"":2}}", result);
+        }
     }
 }
